@@ -43,22 +43,22 @@ func main() {
 	fmt.Println(slice, len(slice), cap(slice))
 
 	// Recorrer un Slice
-	slice := []string{"manzana", "uva", "naranja", "platano"}
+	slice2 := []string{"manzana", "uva", "naranja", "platano"}
 
 	// range devuelve dos valores, el indice y el valor de cada iteracion
-	for index, value := range slice {
-		fmt.Println("Index:",index)
-		fmt.Println("Valor:",value)
+	for index, value := range slice2 {
+		fmt.Println("Index:", index)
+		fmt.Println("Valor:", value)
 	}
 
 	// Si solo queremos rescatar el valor podemos agregar un _ para no tomar el index
-	for _, value := range slice {
-		fmt.Println("Valor:",value)
+	for _, value := range slice2 {
+		fmt.Println("Valor:", value)
 	}
 
 	// si solo necesitamos solo en indice no necesitamos agregar _ ya que index es el valor por defecto
-	for index := range slice {
-		fmt.Println("Index:",index)
+	for index := range slice2 {
+		fmt.Println("Index:", index)
 	}
 
 }

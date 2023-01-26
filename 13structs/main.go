@@ -1,8 +1,10 @@
 package main
 
+import "fmt"
+
 type Car struct {
 	brand string
-	year int
+	year  int
 }
 
 func main() {
@@ -10,7 +12,7 @@ func main() {
 	myCar := Car{brand: "Ford", year: 2020}
 	fmt.Println(myCar)
 
-	otherCar := Car
+	otherCar := Car{}
 	otherCar.brand = "Ferrari"
 	fmt.Println(otherCar)
 	// para los campos faltantes se agregan los Zero values

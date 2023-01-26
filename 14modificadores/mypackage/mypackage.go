@@ -12,17 +12,16 @@ type Polera struct {
 
 type car struct {
 	brand string
-	year int
+	year  int
 }
 
 // Este metodo tambien se puede utilizar con funciones
 
 // Sumar funcion que permite sumar dos numeros
-func Sumar(a,b int) int {
+func Sumar(a, b int) int {
 	return a + b
 }
 
-func sumaSecreta(a,b int) int {
+func sumaSecreta(a, b int) int {
 	return a + b
 }
-

@@ -30,6 +30,7 @@ func main() {
 	// Condicional nil
 	value, err := strconv.Atoi("b3")
 	if err != nil {
+		fmt.Println("Valor no es posible parsear")
 		log.Fatal(err)
 	}
 	fmt.Println("Value", value)
